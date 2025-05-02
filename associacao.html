@@ -4,27 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Associação de Resistores</title>
 </head>
-<body>
+<body class="body">
+
+    <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="resistenciaLed.html">Resistencia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cores.html">Código de cores</a>
+        </li>
+    </ul>
+      
+    <br>
+
     <h1>ASSOCIAÇÃO DE RESISTORES</h1>
-        <h2>Série e Paralelo</h2>
+
+    <br>
 
     <form>
-
-        <p>Resistor 1:</p>
-        <input type="number" id="v1" required>
-        <p>Resistor 2:</p>
-        <input type="number" id="v2" required>
-        <p>Resistor 3:</p>
-        <input type="number" id="v3" required>
-
+        <p>Resistor 1:<br>
+        <input type="number" id="v1" required></p>
+        <p>Resistor 2:<br>
+        <input type="number" id="v2" required></p>
+        <p>Resistor 3:<br>
+        <input type="number" id="v3" required></p>
     </form>
+
+    <br>
 
     <h3>Selecione o tipo de circuito:</h3>
     <input type="submit" id="serie" value="SÉRIE">
     <input type="submit" id="paralelo" value="PARALELO">
     <input type="submit" id="misto" value="MISTO">
+
+    <br><br>
 
     <h3 id="saida"></h3>
 

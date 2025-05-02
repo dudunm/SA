@@ -4,29 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Código de Cores</title>
 </head>
-<body>
-    <h1>CÓDIGO DE CORES - RESISTORES</h1>
-    <h2>Para resistores de 4 faixas</h2>
+<body class="body">
+
+    <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="resistenciaLed.html">Resistencia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="associacao.html">Associação</a>
+        </li>
+      </ul>
+
+      <br>
+
+    <h1>CÓDIGO DE CORES - RESISTORES DE 4 FAIXAS</h1>
 
     <p>Para melhor funcionamento escreva o nome das cores em letra minúscula!</p>
 
     <form>
-
-        <p>Faixa 1</p>
-        <input type="text" id="faixa1" required>
-        <p>Faixa 2</p>
-        <input type="text" id="faixa2" required>
-        <p>Faixa 3</p>
-        <input type="text" id="faixa3" required>
-        <p>Faixa 4</p>
-        <input type="text" id="faixa4" required>
-
+        <p>Faixa 1<br>
+        <input type="text" id="faixa1" required></p>
+        <p>Faixa 2<br>
+        <input type="text" id="faixa2" required></p>
+        <p>Faixa 3<br>
+        <input type="text" id="faixa3" required></p>
+        <p>Faixa 4<br>
+        <input type="text" id="faixa4" required></p>
     </form>
 
-    <h3>Clique para calcular:</h3>
+    <br>
+
     <input type="submit" id="calc" value="Calcular">
+
+    <br><br>
 
     <h3 id="saida"></h3>
 

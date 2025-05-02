@@ -4,24 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>LED</title>
 </head>
-<body>
-    <h1>Resistência de um LED</h1>
+<body class="body">
+
+    <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="associacao.html">Associação</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cores.html">Código de cores</a>
+        </li>
+    </ul>
+
+    <br>
+
+    <h1>RESISTÊNCIA DE UM LED</h1>
+
+    <br>
 
     <form>
-
-        <p>Tensão da fonte:</p>
-        <input type="number" id="tensaoFonte" required>
-        <p>Tensão do Led:</p>
-        <input type="number" id="tensaoLED" required>
-        <p>Corrente do LED (em MiliAmperes):</p>
-        <input type="number" id="corrente" required>
-
+        <p>Tensão da fonte:<br>
+        <input type="number" id="tensaoFonte" required></p>
+        <p>Tensão do Led:<br>
+        <input type="number" id="tensaoLED" required></p>
+        <p>Corrente do LED (em MiliAmperes):<br>
+        <input type="number" id="corrente" required></p>
     </form>
 
-    <p>Clique para fazer o calculo</p>
+    <br>
+
     <input type="submit" id="calc" value="CALCULAR">
+
+    <br><br>
 
     <h3 id="saida"></h3>
 
